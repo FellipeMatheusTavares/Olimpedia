@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Olimpíadas 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Olimpíadas 2024</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#modalidades">Modalidades</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                    <li><a href="index.html#chat">Chat</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="login">
+            <div class="container">
+                <div id="login-form">
+                    <h2>Login</h2>
+                    <input type="text" id="login-email" placeholder="Email">
+                    <input type="password" id="login-password" placeholder="Senha">
+                    <button onclick="loginUser()">Login</button>
+                    <p>Ainda não tem uma conta? <a href="#" onclick="showRegisterForm()">Cadastre-se</a></p>
+                </div>
+                <div id="register-form" style="display: none;">
+                    <h2>Cadastro</h2>
+                    <input type="text" id="register-username" placeholder="Nome do usuário">
+                    <input type="text" id="register-email" placeholder="Email">
+                    <input type="password" id="register-password" placeholder="Senha">
+                    <button onclick="registerUser()">Cadastrar</button>
+                    <p>Já tem uma conta? <a href="#" onclick="showLoginForm()">Faça login</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Olimpíadas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html>
